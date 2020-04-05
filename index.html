@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>My Portfolio Website</title>
+		<!--Normalizing for other browsers-->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />
+
+        <!--Font-->
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="css/style.css">
+
+	</head>
+	<body>
+		<header>
+			<div class="logo">
+			<!--	<img src="C:/Users/user/Desktop/header.jpg" alt="">	-->
+			</div>
+			<button class="nav-toggle" aria-label="toggle navigation">
+				<span class="hamburger"></span>
+			</button>
+			<nav class="nav">
+				<ul class="nav__list">
+					<li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
+					<li class="nav__item"><a href="#services" class="nav__link">My Services</a></li>
+					<li class="nav__item"><a href="#about" class="nav__link">About me</a></li>
+					<li class="nav__item"><a href="#work" class="nav__link">My Skills</a></li>
+					<li class="nav__item"><a href="#connect" class="nav__link">Gallery</a></li>
+				</ul>
+			</nav>
+		</header>
+
+		<!-- Introduction -->
+		<section class="intro" id="home">
+			<h1 class="section__title section__title--intro">
+				Hi, I am <strong>Sarthak Sharma</strong>
+			</h1>
+			<p class="section__subtitle section__subtitle--intro">SOFTWARE ENGINEER & MUSICIAN</p>
+			<img src="pictures/header.JPG" alt="a picture of me" class="intro__img">
+		</section>
+
+
+		<!-- My Serivces -->
+		<section class="my-services" id="services">
+			<h2 class="section__title section__title--services">What I do</h2>
+			<div class="services">
+				<div class="service">
+					<h3>Design + Development</h3>
+					<p>I design and develop webpages and applications for fun. I believe after you've learnt to code, there's an ocean of possiblities that open up for you. I like developing applications on the andriod platfrom as well using android studio.</p>
+				</div>
+				<div class="service">
+					<h3>Compose Music</h3>
+					<p>I play many instruments like guitar, drums, congo, piano and with the combination of these instruments, I try to come up with different music compositions. Out of all the instruments, I am very passionate about playing the guitar.</p>
+				</div>
+				<div class="service">
+					<h3>Nature Photography</h3>
+					<p>I like exploring new places and capturing the beauty of nature into my camera. Sunsets are always the focus of my camera. I really enjoy going to the outdoors and learn more about nature. Nature give me a sense of freedom.</p>
+				</div><!--/service-->
+			</div><!--/services-->
+			<a href="#work" class="btn">My Skills</a>
+		</section>
+
+		<!-- About me -->
+		<section class="about-me" id="about">
+			<h2 class="section__title section__title--about">Who I am</h2>
+			<p class="section__subtitle section__subtitle--about">Designer and Developer</p>
+
+			<div class="about-me__body">
+				<p>I am a software engineer based in India. I have completed my Bachelors of Technology degree in Computer Science from Dehradun. I have experience of working as an intern at <i>HCL Infotech</i> and <i>Cognizant technology solutions</i></p>
+               <p>Apart from working as a software engineer, I also like to do community service. I am a member of <a href="https://pathofHumanity.in">Path of Humanity</a> Society where we organize events and camps to help the unfortune and spread kindness and awareness among the people.</p>
+			</div>
+
+			<img src="pictures/aboutme.jpg" alt="Posing in lavasa" class="about-me__img">
+		</section>
+
+		<!-- My Work -->
+		<section class="my-work" id="work">
+			<h2 class="section__title section__title--work">My Skills</h2>
+			<p class="section__subtitle section__subtitle--work">A selection of my range of skill</p>
+
+			<div class="portfolio">
+				<a href="#" class="portfolio__item">
+					<img src="pictures/html10.png" alt="" class="portfolio__img">
+				</a>
+				<a href="#" class="portfolio__item">
+					<img src="pictures/css10.png" alt="" class="portfolio__img">
+				</a>
+				<a href="#" class="portfolio__item">
+					<img src="pictures/js1.png" alt="" class="portfolio__img">
+				</a>
+				<a href="#" class="portfolio__item">
+					<img src="pictures/jq.png" alt="" class="portfolio__img">
+				</a>
+				<a href="#" class="portfolio__item">
+					<img src="pictures/python.png" alt="" class="portfolio__img">
+				</a>
+				<a href="#" class="portfolio__item">
+					<img src="pictures/java1.png" alt="" class="portfolio__img">
+				</a>
+				<a href="#" class="portfolio__item">
+					<img src="pictures/android.png" alt="" class="portfolio__img">
+				</a>
+				<a href="#" class="portfolio__item">
+					<img src="pictures/cpp1.png" alt="" class="portfolio__img">
+				</a>
+			</div>
+		</section>
+
+
+
+
+
+				<!-- My Gallery -->
+		<section class="my-gallery" id="gallery">
+			<h2 class="section__title section__title--gallery">Gallery</h2>
+			<p class="section__subtitle section__subtitle--gallery">A few pictures from my collection</p>
+
+			<div class="MyGallery">
+				<a href="#" class="gallery__item">
+					<img src="../Portfolio/pictures/gal1.jpg" alt="" class="gallery__img">
+				</a>
+				<a href="#" class="gallery__item">
+					<img src="../Portfolio/pictures/gal2.jpg" alt="" class="gallery__img">
+				</a>
+				<a href="#" class="gallery__item">
+					<img src="../Portfolio/pictures/gal3.jpg" alt="" class="gallery__img">
+				</a>
+				<a href="#" class="gallery__item">
+					<img src="../Portfolio/pictures/gal7.jpg" alt="" class="gallery__img">
+				</a>
+				<a href="#" class="gallery__item">
+					<img src="../Portfolio/pictures/gal4.jpg" alt="" class="gallery__img">
+				</a>
+				<a href="#" class="gallery__item">
+					<img src="../Portfolio/pictures/gal5.jpg" alt="" class="gallery__img">
+				</a>
+			</div>
+		</section>
+
+
+
+
+
+
+		<!-- Footer -->
+		<footer class="footer" id="connect">
+			<a href="mailto:hello@jane.dev" class="footer__link">sarthaksharmav@gmail.com</a>
+            <ul class="social-list">
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://github.com/i-am-sarthak">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </li>
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://www.instagram.com/this_is_sarthakk">
+                    	<i class="fab fa-instagram"></i>	
+                    </a>
+                </li>
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://www.facebook.com/sarthaksharmav">
+                    	<i class="fab fa-facebook-square"></i>
+                    </a>
+                </li>
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://www.linkedin.com/in/sarthaksharmav">
+                    	<i class="fab fa-linkedin-in"></i>
+                    </a>
+                </li>
+            </ul>
+		</footer>
+
+		<script src="js/index.js"></script>
+
+	</body>
+</html>
