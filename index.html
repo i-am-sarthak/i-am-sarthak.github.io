@@ -38,50 +38,58 @@
 			<h1 class="section__title section__title--intro">
 				Hi, I am <strong>Sarthak Sharma</strong>
 			</h1>
-			<p class="section__subtitle section__subtitle--intro">SOFTWARE ENGINEER & MUSICIAN</p>
+			<p class="section__subtitle section__subtitle--intro">Full-Stack Software Developer</p>
 			<img src="pictures/header.JPG" alt="a picture of me" class="intro__img">
 		</section>
 
+		<!-- About me -->
+		<div class="about-me-wrapper-div">
+			<section class="about-me" id="about">
+				<h2 class="section__title section__title--about">Who I am</h2>
+				<p class="section__subtitle section__subtitle--about">Designer and Developer</p>
+
+				<div class="about-me__body">
+					<p>I am a Software developer based in Canada with experience across full-stack development, backend engineering, and cybersecurity-focused applications. I completed my Master of Computer Science Degree from University of New Brunswick, Fredericton. I received my underraduate (B. Tech) degree in Computer Science Engineering from DIT University, Dehradun, in 2020.</p>
+					<p>I recently worked as a Junior Software Developer at Beauceron Security, contributing to their cybersecurity awareness platform used by over a million users. My work involved backend feature development, SQL optimization, data processing, and collaborating in an Agile environment to deliver stable, secure, and high-impact product improvements</p>
+					<p>Before that, I completed a co-op at Introhive, where I contributed to an AI-powered SaaS platform, optimized backend performance using Ruby on Rails and JavaScript, and improved system reliability through monitoring dashboards and automated testing.</p>
+					<p>I enjoy building clean, efficient systems and taking ideas from concept to production. Outside of coding, I like composing music and exploring nature through photography.</p>
+				</div>
+
+				<img src="pictures/aboutme2.jpg" alt="Posing in lavasa" class="about-me__img">
+			</section>
+		</div>
 
 		<!-- My Serivces -->
 		<section class="my-services" id="services">
 			<h2 class="section__title section__title--services">What I do</h2>
 			<div class="services">
 				<div class="service">
-					<h3>Design + Development</h3>
-					<p>I design and develop webpages and scalable applications. I believe coding unlocks a vast ocean of possibilities, and I thrive on exploring new ideas and building innovative solutions. I like developing applications on the andriod platfrom as well using android studio.</p>
+					<h3>Full-Stack Development</h3>
+					<p>I build modern, scalable web applications using React, Node.js/Express, Django, and Ruby on Rails. I enjoy designing intuitive user experiences and creating backend systems that are secure, efficient, and production-ready.</p>
 				</div>
 				<div class="service">
-					<h3>Compose Music</h3>
-					<p>I play many instruments like guitar, drums, congo, piano and with the combination of these instruments, I try to come up with different music compositions. Of all the instruments, I am most passionate about playing the guitar.</p>
+					<h3>Backend Engineering</h3>
+					<p>I work extensively with SQL, data pipelines, monitoring tools, and backend logic. My recent experience includes cybersecurity platforms, large-scale user simulations, data ingestion workflows, and optimizing queries for reporting and analytics.</p>
 				</div>
 				<div class="service">
-					<h3>Nature Photography</h3>
-					<p>I like exploring new places and capturing the beauty of nature into my camera. Sunsets are always the focus of my lens. I really enjoy going to the outdoors and learn more about nature. Nature gives me a sense of freedom.</p>
+					<h3>Automation & System Optimization</h3>
+					<p>I’ve built cron jobs, automated test cases, SQL-based dashboards, and performance-monitoring tools that reduce system downtime and strengthen product reliability.</p>
 				</div><!--/service-->
 			</div><!--/services-->
 			<a href="#work" class="btn">My Skills</a>
 		</section>
 
-		<!-- About me -->
-		<section class="about-me" id="about">
-			<h2 class="section__title section__title--about">Who I am</h2>
-			<p class="section__subtitle section__subtitle--about">Designer and Developer</p>
-
-			<div class="about-me__body">
-				<p>I am a Master's student at UNB, Canada. I have completed my Bachelors of Technology degree in Computer Science from Dehradun. I have experience of working as a Full Stack Developer at  <i>Blue Water Trade Winds Pvt. Ltd.</i> and as an intern at <i>Cognizant technology solutions</i></p>
-               <p>Apart from working as a software engineer, I also like to do community service. I am a member of <a href="https://pathofHumanity.in">Path of Humanity</a> Society where we organize events and camps to help the unfortune and spread kindness and awareness among the people.</p>
-			</div>
-
-			<img src="pictures/aboutme2.jpg" alt="Posing in lavasa" class="about-me__img">
-		</section>
-
 		<!-- My Work -->
-		<section class="my-work" id="work">
+		<!-- <section class="my-work" id="work">
 			<h2 class="section__title section__title--work">My Skills</h2>
 			<p class="section__subtitle section__subtitle--work">A selection of my range of skill</p>
 
 			<div class="portfolio">
+
+				<div class="skill" role="listitem" aria-label="Python">
+				<i class="fab fa-python" aria-hidden="true"></i>
+				<span class="skill__label">Python</span>
+				</div>
 				<a href="#" class="portfolio__item">
 					<img src="pictures/html10.png" alt="" class="portfolio__img">
 				</a>
@@ -107,13 +115,120 @@
 					<img src="pictures/cpp1.png" alt="" class="portfolio__img">
 				</a>
 			</div>
+		</section> -->
+
+
+		<!-- Projects Section -->
+		<section class="projects" id="projects">
+			<h2 class="section__title section__title--work">Projects</h2>
+			<p class="section__subtitle section__subtitle--work">A Selection of my Recent Work</p>
+
+			<div class="projects-grid">
+
+				<!-- Project 1 -->
+				<div class="project-card">
+					<h3 class="project-title">Hand-Gesture Controlled eBook Reader</h3>
+					<p class="project-desc">
+						An interactive eBook reader powered by Python and OpenCV, allowing users
+						to flip pages, scroll, and navigate using real-time hand gesture recognition.
+					</br></br>
+					Inspired by accessibility needs and human-centered interaction principles, this project allows hands-free reading, making eBooks more accessible, intuitive, and engaging.
+					</p>
+
+					<div class="project-links">
+						<a href="https://github.com/i-am-sarthak/gesture-controlled-ebook-reader" class="btn project-btn">GitHub</a>
+					</div>
+				</div>
+
+				<!-- Project 2 -->
+				<div class="project-card">
+					<h3 class="project-title">Security Pulse</h3>
+					<p class="project-desc">
+						A production-grade cybersecurity awareness platform built using 
+						Node.js (Express + TypeScript), PostgreSQL, and 
+						React (Vite + Tailwind). </br></br>Features include JWT authentication, protected routes,
+						user-saved articles, daily automated SecureWeek news ingestion (cron jobs), and backend test coverage using Jest + Supertest.
+					</p>
+
+					<div class="project-links">
+						<a href="https://github.com/i-am-sarthak/security-pulse" class="btn project-btn">GitHub</a>
+						<a href="https://security-pulse-tau.vercel.app" class="btn project-btn">Live Demo</a>
+					</div>
+				</div>
+
+				<!-- Project 3 -->
+				<div class="project-card">
+					<h3 class="project-title">Criminal Record Management System</h3>
+					<p class="project-desc">
+						A JavaFX-based desktop application for managing criminal records with full CRUD functionality. Users can add, view, edit, and delete FIR entries through an interactive UI. 
+						</br></br>
+						Built with Java, JavaFX, and observable data structures in an MVC-style architecture.
+					</p>
+					<div class="project-links">
+						<a href="https://github.com/i-am-sarthak/Criminal-Record-Management-System" class="btn project-btn">GitHub</a>
+					</div>
+				</div>
+			</div>
 		</section>
 
 
+		<!-- Experience Section -->
+		<section class="experience" id="experience">
+			<h2 class="section__title">Experience</h2>
+			<p class="section__subtitle section__subtitle--work">Where I’ve Worked</p>
+
+			<div class="experience-list">
+
+				<!-- Beauceron -->
+				<div class="experience-row">
+					<span class="exp-date">Jul 2024 – Jan 2025</span>
+					<a href="https://www.beauceronsecurity.com/" target="_blank">
+						<img src="pictures/beauceron_logo.png" alt="Beauceron" class="exp-logo-small">
+					</a>
+					<span class="exp-role">Junior Software Developer</span>
+				</div>
+
+				<!-- Introhive -->
+				<div class="experience-row">
+					<span class="exp-date">May 2023 – Dec 2023</span>
+					<a href="https://www.introhive.com/" target="_blank">
+						<img src="pictures/introhive_logo.png" alt="Introhive" class="exp-logo-small">
+					</a>
+					<span class="exp-role">Associate Software Engineer Co-op</span>
+				</div>
+
+				<!-- Blue Water -->
+				<div class="experience-row">
+					<span class="exp-date">Oct 2020 – Jul 2022</span>
+					<a href="https://bwesglobal.com/" target="_blank">
+						<img src="pictures/bluewater_logo.png" alt="Blue Water" class="exp-logo-small">
+					</a>
+					<span class="exp-role">Software Developer</span>
+				</div>
+
+				<!-- Cognizant -->
+				<div class="experience-row">
+					<span class="exp-date">Jan 2020 – Apr 2020</span>
+					<a href="https://www.cognizant.com/in/en" target="_blank">
+						<img src="pictures/cognizant_logo.png" alt="Cognizant" class="exp-logo-small">
+					</a>
+					<span class="exp-role">Programmer Analyst Trainee</span>
+				</div>
+
+				<!-- HCL -->
+				<div class="experience-row">
+					<span class="exp-date">May 2019 – Jun 2019</span>
+					<a href="https://www.hcltech.com/" target="_blank">
+						<img src="pictures/hcl_logo.png" alt="HCL" class="exp-logo-small">
+					</a>
+					<span class="exp-role">Summer Intern</span>
+				</div>
+
+			</div>
+		</section>
 
 
-
-				<!-- My Gallery -->
+		<!-- My Gallery
 		<section class="my-gallery" id="gallery">
 			<h2 class="section__title section__title--gallery">Gallery</h2>
 			<p class="section__subtitle section__subtitle--gallery">A few pictures from my collection</p>
@@ -138,11 +253,23 @@
 					<img src="pictures/gal5.jpg" alt="" class="gallery__img">
 				</a>
 			</div>
-		</section>
+		</section> -->
 
-
-
-
+				<!-- Hobbies -->
+		<!-- <section class="my-gallery" id="gallery">
+			<div class="service">
+					<h3>Design + Development</h3>
+					<p>I design and develop webpages and scalable applications. I believe coding unlocks a vast ocean of possibilities, and I thrive on exploring new ideas and building innovative solutions. I like developing applications on the andriod platfrom as well using android studio.</p>
+				</div>
+				<div class="service">
+					<h3>Compose Music</h3>
+					<p>I play many instruments like guitar, drums, congo, piano and with the combination of these instruments, I try to come up with different music compositions. Of all the instruments, I am most passionate about playing the guitar.</p>
+				</div>
+				<div class="service">
+					<h3>Nature Photography</h3>
+					<p>I like exploring new places and capturing the beauty of nature into my camera. Sunsets are always the focus of my lens. I really enjoy going to the outdoors and learn more about nature. Nature gives me a sense of freedom.</p>
+				</div>
+		</section> -->
 
 
 		<!-- Footer -->

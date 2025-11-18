@@ -127,9 +127,13 @@ h3 { font-size: var(--fs-h3) }
 }
 
 .section__subtitle--work, .section__subtitle--gallery{
-	 color: var(--clr-accent);
-	 font-weight: var(--fw-bold);
-	 margin-bottom: 2em;
+    background: var(--clr-accent);
+    padding: .25em 1em;
+    font-family: var(--ff-secondary);
+    margin-bottom: 1em;
+    display: inline-block;
+    text-align: center;
+    border-radius: 4px; 
 }
 
 /* header */
@@ -334,6 +338,9 @@ header {
     }
 }
 
+.about-me-wrapper-div {
+    background-color: #f4f4f4;
+}
 
 .about-me {
     max-width: 1000px;
@@ -495,19 +502,125 @@ header {
 }
 
 
+/* Projects Section */
+
+.projects {
+    background-color: #f4f4f4;
+    text-align: center;
+    padding: 5em 2em;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2em;
+    margin-top: 2.5em;
+}
+
+.project-card {
+    background: #1a1a1a;
+    border: 1px solid #2a2a2a;
+    border-radius: 14px;
+    padding: 2em;
+    color: #f5f5f5;
+    box-shadow: 0 4px 14px rgba(0,0,0,0.35);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 200ms ease, box-shadow 200ms ease;
+}
 
 
+.project-card:hover {
+    transform: translateY(-8px);
+}
+
+.project-title {
+    font-size: 1.5rem;
+    margin-bottom: 0.5em;
+    color: var(--clr-accent);
+}
+
+.project-desc {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 1.5em;
+    text-align: justify;
+}
+
+.project-links {
+    display: flex;
+    gap: 1em;
+    margin-top: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
 
 
+.project-btn {
+    background: var(--clr-accent);
+    color: var(--clr-dark);
+    font-size: 0.85rem;
+    padding: 0.5em 1.2em;
+    border-radius: 5px;
+}
 
 
+/* Experience section */
+.experience {
+    background: gray;
+    padding: 5em 2em;
+    text-align: center;
+}
+.experience h2 {
+    color: #fff;
+}
 
+.experience-list {
+    margin: 3em auto;
+    max-width: 900px;
+    display: flex;
+    flex-direction: column;
+    gap: 1.8em;
+}
 
+.experience-row {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+    text-align: center;
+    padding: 0.8em 0;
+    border-bottom: 1px solid #dadada;
+}
 
+.exp-date {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #fff;
+}
 
+.exp-logo-small {
+    width: 200px;
+    height: 60px;
+    object-fit: contain;
+}
 
+.exp-role {
+    font-size: 1.05rem;
+    font-weight: 700;
+    color: #fff;
+}
 
+/* Mobile stack */
+@media (max-width: 600px) {
+    .experience-row {
+        grid-template-columns: 1fr;
+        gap: 0.5em;
+        text-align: center;
+    }
 
-
-
+    .exp-logo-small {
+        margin: 0.5em auto;
+    }
+}
 
